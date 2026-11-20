@@ -403,7 +403,7 @@ export const bundles: Bundle[] = [
     slug: "christmas-norfolk-set",
     name: "Christmas Norfolk Set",
     short: "Our living Christmas tree, ready to hang.",
-    price: 89.99,
+    price: 64.99,
     separatePrice: 73.97,
     images: ["/images/norfolk-pine-classic-hanger.jpg"],
     badge: "Holiday limited",
