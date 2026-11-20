@@ -7,9 +7,9 @@ import { applyBuilderDiscount, formatCents, toCents } from "@/lib/money";
 import { useCart } from "@/context/CartContext";
 import { ProductImage } from "@/components/ProductImage";
 
-// Container choices: every single size (the 3-piece set is excluded — builder needs one container).
+// Container choices: every single size (sets and pairs are excluded — builder needs one container).
 const containerOptions = containers.flatMap((c) =>
-  (c.sizes ?? []).filter((s) => s.label !== "Set of 3").map((s) => ({
+  (c.sizes ?? []).filter((s) => !/^(Set|Pair)/.test(s.label)).map((s) => ({
     key: `${c.slug}|${s.label}`,
     name: `${c.name.replace("Nested ", "")} — ${s.label}`,
     price: s.price,

@@ -145,12 +145,29 @@ export const containers: Product[] = [
     description:
       "A set of three woven seagrass baskets in natural colour: 20×20×20 cm, 21×21×21 cm and 23×23×24 cm. Buy the set, or any size on its own.",
     price: 16.99,
-    images: ["/images/seagrass-basket-set.jpg"],
+    images: ["/images/seagrass-baskets-jute-rim-set.jpg", "/images/seagrass-basket-set.jpg"],
     sizes: [
       { label: "Set of 3", price: 44.99, note: "20×20×20, 21×21×21 and 23×23×24 cm" },
       { label: "Small", price: 16.99, note: "20×20×20 cm" },
       { label: "Medium", price: 19.99, note: "21×21×21 cm" },
       { label: "Large", price: 24.99, note: "23×23×24 cm" },
+    ],
+  },
+  {
+    // Demo price — confirm with real landed cost before launch.
+    slug: "two-tone-basket-pair",
+    category: "container",
+    name: "Two-Tone Cotton & Seagrass Baskets",
+    short: "Soft cotton-cord top, woven seagrass base — a pair.",
+    description:
+      "A pair of round planter baskets: coiled cream cotton cord on top, hand-twisted seagrass below. Slip a nursery pot straight in, or use them for storage. Buy the pair, or either size on its own.",
+    price: 15.99,
+    images: ["/images/two-tone-cotton-seagrass-baskets.jpg"],
+    badge: "New",
+    sizes: [
+      { label: "Pair (S + L)", price: 34.99 },
+      { label: "Small", price: 15.99 },
+      { label: "Large", price: 21.99 },
     ],
   },
   {
