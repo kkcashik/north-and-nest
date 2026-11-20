@@ -20,7 +20,7 @@ Deploys to Vercel or Netlify with zero config.
 Visit `/catalogue` for a printable catalogue built from `src/data/products.ts`. Click **Print / save as PDF** to export it.
 
 ## Replace the concept photos
-Photos are in `public/images/`. Replace a file with the same name, or edit the `images` paths in `src/data/products.ts`. Any product without a photo shows a clean placeholder block (no broken images). Still needed: `money-tree-diamond-hanger.jpg`, `monstera-owl-hanger.jpg`, `pod-hanger-mini-norfolk.jpg` — add them and point the matching products at them.
+Photos are in `public/images/`. Replace a file with the same name, or edit the `images` paths in `src/data/products.ts`. Any product without a photo shows a clean placeholder block (no broken images). All current photos are AI concept mockups. Shoot your own samples and swap them in before listing anything.
 
 ## Rules baked in
 No wood in any hanger. Live plants ship within Ontario only. No supplier names on the public site.

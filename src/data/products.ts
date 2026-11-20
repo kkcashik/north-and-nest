@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // ALL product, bundle, tree, price and option data lives in this file.
-// Concept photos — replace with real product photos before launch.
+// Concept photos (AI-generated mockups) — replace with real photos of your own samples before launch.
 // (Drop new files in public/images/ with the same filenames, or edit the paths below.)
 // To add a product: copy an entry, give it a unique `slug`, and it appears everywhere.
 // Hard rule: NO wood — macramé cord hangers only (no shelves, rings, dowels or discs).
@@ -88,7 +88,7 @@ export const hangers: Product[] = [
     description:
       "A single hanger worked in a diamond knot pattern that frames the pot beautifully. Handmade, cord only, and hard to find in Canada.",
     price: 29.99,
-    images: ["/images/norfolk-pine-classic-hanger.jpg"],
+    images: ["/images/norfolk-pine-classic-hanger.jpg", "/images/money-tree-diamond-hanger.jpg"],
     badge: "Hard to find",
     colours: [C.cream],
   },
@@ -100,7 +100,7 @@ export const hangers: Product[] = [
     description:
       "A playful owl design that cradles a single pot. A lovely gift for a plant lover. Handmade macramé cord only.",
     price: 39.99,
-    images: [],
+    images: ["/images/owl-hanger-monstera.jpg"],
     badge: "Gift pick",
     colours: [
       { label: "Cream / White", tag: "cream", hex: "#F2ECDD" },
@@ -115,7 +115,7 @@ export const hangers: Product[] = [
     description:
       "A small pouch-shaped single in diamond knotwork. The smallest and lightest hanger we make, made for mini pots and little trees.",
     price: 19.99,
-    images: [],
+    images: ["/images/pod-hanger-mini-norfolk.jpg"],
     badge: "Small pot",
     colours: [
       { label: "Cream-Mustard", tag: "yellow", hex: "#D9B85A" },
@@ -130,7 +130,7 @@ export const hangers: Product[] = [
     description:
       "A heavier, thicker-cord weave built to carry a medium or large pot with confidence. Handmade, cord only.",
     price: 34.99,
-    images: ["/images/thick-cord-dracaena.jpg"],
+    images: ["/images/thick-cord-dracaena.jpg", "/images/fiddle-leaf-fig-thick-cord.jpg"],
     badge: "Holds bigger pots",
     colours: [C.cream],
   },
@@ -145,7 +145,7 @@ export const containers: Product[] = [
     description:
       "A set of three woven seagrass baskets in natural colour: 20×20×20 cm, 21×21×21 cm and 23×23×24 cm. Buy the set, or any size on its own.",
     price: 16.99,
-    images: [],
+    images: ["/images/seagrass-basket-set.jpg"],
     sizes: [
       { label: "Set of 3", price: 44.99, note: "20×20×20, 21×21×21 and 23×23×24 cm" },
       { label: "Small", price: 16.99, note: "20×20×20 cm" },
@@ -161,7 +161,7 @@ export const containers: Product[] = [
     description:
       "A hand-woven jute pot in a warm natural tone. It slips straight into a macramé hanger or stands on its own. More container styles are coming.",
     price: 14.99,
-    images: [],
+    images: ["/images/woven-jute-pots.jpg"],
     sizes: [
       { label: "Small", price: 14.99 },
       { label: "Medium", price: 18.99 },
@@ -180,7 +180,7 @@ export const trees: Product[] = [
     description:
       "A soft-needled evergreen that looks like a tiny Christmas tree and stays green all winter. Arrives small, in a 6\" pot, ready to hang or decorate with fairy lights.",
     price: 34.99,
-    images: ["/images/norfolk-pine-classic-hanger.jpg"],
+    images: ["/images/norfolk-pine-classic-hanger.jpg", "/images/pod-hanger-mini-norfolk.jpg"],
     badge: "Christmas hero",
     light: ["low", "medium"],
     lightLabel: "Low–medium light",
@@ -198,7 +198,7 @@ export const trees: Product[] = [
     short: "Braided trunk, a classic gift.",
     description: "A braided-trunk tree with bright palm-like leaves. Easy, forgiving and a popular gift.",
     price: 29.99,
-    images: [],
+    images: ["/images/money-tree-diamond-hanger.jpg"],
     badge: "Gift pick",
     light: ["low", "medium"],
     lightLabel: "Low–medium light",
@@ -311,7 +311,7 @@ export const trees: Product[] = [
     short: "Big split leaves, big personality.",
     description: "Famous for its large, split leaves. Gives a lot of look for the money.",
     price: 32.99,
-    images: [],
+    images: ["/images/owl-hanger-monstera.jpg"],
     light: ["medium"],
     lightLabel: "Medium light",
     difficulty: "Easy",
@@ -327,7 +327,7 @@ export const trees: Product[] = [
     short: "The designer favourite — needs a bright window.",
     description: "Large, violin-shaped leaves on a sculptural stem. Beautiful, but it needs real light.",
     price: 44.99,
-    images: [],
+    images: ["/images/fiddle-leaf-fig-thick-cord.jpg"],
     badge: "Bright window needed",
     light: ["bright"],
     lightLabel: "Bright light",
@@ -377,7 +377,7 @@ export const bundles: Bundle[] = [
     short: "Medium plant, diamond hanger, medium jute pot.",
     price: 69.99,
     separatePrice: 79,
-    images: [],
+    images: ["/images/money-tree-diamond-hanger.jpg"],
     contents: [
       "Medium tree (pothos or silver satin pothos)",
       "Diamond Single Hanger",
@@ -405,7 +405,7 @@ export const bundles: Bundle[] = [
     short: "Our living Christmas tree, ready to hang.",
     price: 64.99,
     separatePrice: 73.97,
-    images: ["/images/norfolk-pine-classic-hanger.jpg"],
+    images: ["/images/pod-hanger-mini-norfolk.jpg", "/images/norfolk-pine-classic-hanger.jpg"],
     badge: "Holiday limited",
     contents: [
       "Norfolk Island Pine",
