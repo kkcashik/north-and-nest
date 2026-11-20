@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #faf6ef;
+  --color-jute: #b99b6b;
+  --color-jute-light: #c8a97a;
+  --color-forest: #1e3d2f;
+  --color-sage: #dde8dd;
+  --color-charcoal: #22281f;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --shadow-soft: 0 2px 14px rgba(34, 40, 31, 0.08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--color-forest); }
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-forest px-5 py-2.5 text-sm font-medium text-cream transition hover:bg-forest/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-forest px-5 py-2.5 text-sm font-medium text-forest transition hover:bg-sage focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest;
+  }
+  .container-page { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+  .section { @apply py-12 sm:py-16; }
+  .input { @apply w-full rounded-xl border border-jute/60 bg-white px-3.5 py-2.5 text-sm focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20; }
+  .label { @apply mb-1 block text-sm font-medium text-forest; }
+}
