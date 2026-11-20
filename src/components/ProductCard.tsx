@@ -40,7 +40,7 @@ export function ProductCard({ item }: { item: Product | Bundle }) {
         <p className="mt-auto pt-2 text-base font-semibold text-forest">
           {showFrom && <span className="mr-1 text-sm font-normal text-charcoal/60">from</span>}
           {formatPrice(price)}
-          {isBundle && (
+          {isBundle && item.separatePrice > item.price && (
             <span className="ml-2 text-sm font-normal text-charcoal/55 line-through">{formatPrice(item.separatePrice)}</span>
           )}
         </p>

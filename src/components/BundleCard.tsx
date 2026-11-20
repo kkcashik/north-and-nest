@@ -30,11 +30,13 @@ export function BundleCard({ bundle, full = false }: { bundle: Bundle; full?: bo
         )}
         {full && bundle.note && <p className="text-sm italic text-charcoal/70">{bundle.note}</p>}
         <div className="mt-auto">
-          <p className="text-sm text-charcoal/60">
-            Bought separately: <span className="line-through">{formatPrice(bundle.separatePrice)}</span>
-          </p>
+          {saving > 0 && (
+            <p className="text-sm text-charcoal/60">
+              Bought separately: <span className="line-through">{formatPrice(bundle.separatePrice)}</span>
+            </p>
+          )}
           <p className="text-2xl font-semibold text-forest">{formatPrice(bundle.price)}</p>
-          <p className="text-sm font-medium text-jute">You save {formatCents(saving)}</p>
+          {saving > 0 && <p className="text-sm font-medium text-jute">You save {formatCents(saving)}</p>}
         </div>
         <button type="button" className="btn-primary" onClick={() => { add(lineForBundle(bundle)); setAdded(true); setTimeout(() => setAdded(false), 1500); }}>
           {added ? "Added ✓" : "Add to cart"}
