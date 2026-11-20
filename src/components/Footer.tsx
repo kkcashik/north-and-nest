@@ -9,12 +9,13 @@ const links = [
   { href: "/care", label: "Care guide" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
+  { href: "/catalogue", label: "Catalogue" },
   { href: "/cart", label: "Cart" },
 ];
 
 export function Footer() {
   return (
-    <footer className="mt-12 bg-forest text-cream">
+    <footer className="mt-12 bg-forest text-cream print:hidden">
       <div className="container-page grid gap-8 py-12 sm:grid-cols-3">
         <div>
           <p className="font-serif text-2xl text-cream">{siteConfig.name}</p>
@@ -37,7 +38,7 @@ export function Footer() {
       <div className="border-t border-cream/15">
         <div className="container-page flex flex-col gap-1 py-4 text-xs text-cream/70 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}. All prices in CAD.</p>
-          <p>Concept store — launching for Christmas 2026</p>
+          <p>Concept store — launching for Christmas 2026. Photos are concept images; real product photos coming before launch.</p>
         </div>
       </div>
     </footer>

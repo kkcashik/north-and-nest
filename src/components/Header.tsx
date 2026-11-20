@@ -18,7 +18,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const { count, ready } = useCart();
   return (
-    <header className="sticky top-0 z-40 border-b border-jute/30 bg-cream/95 backdrop-blur">
+    <header className="sticky top-0 z-40 print:hidden border-b border-jute/30 bg-cream/95 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <Link href="/" className="font-serif text-xl font-semibold tracking-tight text-forest" onClick={() => setOpen(false)}>
           {siteConfig.name}
@@ -51,6 +51,7 @@ export function Header() {
             {navLinks.map((l) => (
               <Link key={l.label} href={l.href} onClick={() => setOpen(false)} className="border-b border-jute/20 py-3 text-base text-forest last:border-0">{l.label}</Link>
             ))}
+            <Link href="/catalogue" onClick={() => setOpen(false)} className="border-b border-jute/20 py-3 text-base text-forest">Catalogue</Link>
             <Link href="/build" onClick={() => setOpen(false)} className="py-3 text-base font-medium text-forest">Build your own set</Link>
           </div>
         </nav>

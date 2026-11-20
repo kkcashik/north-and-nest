@@ -16,6 +16,9 @@ Deploys to Vercel or Netlify with zero config.
 - **Cart:** `src/context/CartContext.tsx` (client-side, saved in the browser).
 - **Builder discount (10%):** `src/lib/money.ts`.
 
+## Product catalogue
+Visit `/catalogue` for a printable catalogue built from `src/data/products.ts`. Click **Print / save as PDF** to export it.
+
 ## Replace the concept photos
 Photos are in `public/images/`. Replace a file with the same name, or edit the `images` paths in `src/data/products.ts`. Any product without a photo shows a clean placeholder block (no broken images). Still needed: `money-tree-diamond-hanger.jpg`, `monstera-owl-hanger.jpg`, `pod-hanger-mini-norfolk.jpg` — add them and point the matching products at them.
 
